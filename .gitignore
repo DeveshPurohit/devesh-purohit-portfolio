@@ -12,6 +12,8 @@
 /.next/
 /out/
 
+sanityPortfolio/node_modules
+
 # production
 /build
 
