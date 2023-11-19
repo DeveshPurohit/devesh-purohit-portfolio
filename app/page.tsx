@@ -12,6 +12,7 @@ import { fetchProjects } from "@/utils/fetchProjects";
 import { fetchSkills } from "@/utils/fetchSkills";
 import { fetchSocials } from "@/utils/fetchSocials";
 import Link from "next/link";
+import { ToastContainer } from "react-toastify";
 
 export default async function Home() {
 
@@ -23,6 +24,18 @@ export default async function Home() {
 
   return (
     <main className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+       <ToastContainer
+    position="top-center"
+    autoClose={2000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="light"
+    />
       <Header socials={socials}/>
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo}/>
