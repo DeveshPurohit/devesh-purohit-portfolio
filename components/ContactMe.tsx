@@ -56,7 +56,7 @@ export default function ContactMe({}: Props) {
           </div>
         </div>
         <div className="">
-          <form onSubmit={handleSubmit} className="flex flex-col space-y-2 mx-5">
+          <form onSubmit={handleSubmit} className="flex flex-col space-y-2 mx-1 md:mx-5">
             <div className="flex space-x-2">
               <input
                 id="Name"
