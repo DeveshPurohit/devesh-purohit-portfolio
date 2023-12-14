@@ -56,7 +56,7 @@ export default function ContactMe({}: Props) {
           </div>
         </div>
         <div className="">
-          <form onSubmit={handleSubmit} className="flex flex-col space-y-2 mx-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col space-y-2 mx-5">
             <div className="flex space-x-2">
               <input
                 id="Name"
@@ -83,7 +83,7 @@ export default function ContactMe({}: Props) {
               id="message"
               name="message"
               placeholder="Message"
-              className="contactInput"
+              className="contactInput w-[22.5rem] md:w-auto"
               value={formValues.message}
               onChange={(e) => setFormValues({ ...formValues, message: e.target.value })}
             />
@@ -91,7 +91,7 @@ export default function ContactMe({}: Props) {
             <button
               type="submit"
               disabled={state.submitting}
-              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg "
+              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg w-[22.5rem] md:w-auto"
             >
               Submit
             </button>
