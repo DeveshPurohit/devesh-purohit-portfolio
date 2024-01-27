@@ -28,7 +28,7 @@ export default function Projects({ projects }: Props) {
           >
             <motion.img
               initial={{
-                y: -300,
+                y: -200,
                 opacity: 0,
               }}
               transition={{ duration: 1.2 }}
