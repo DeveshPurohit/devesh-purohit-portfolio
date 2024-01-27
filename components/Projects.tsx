@@ -36,7 +36,7 @@ export default function Projects({ projects }: Props) {
               viewport={{ once: true }}
               src={urlFor(project.image).url()}
               alt=""
-              className="w-52 h-52 md:w-80 md:h-80"
+              className="w-44 h-44 md:w-80 md:h-80"
             />
             <div className="space-y-3 max-w-6xl px-0 md:px-10">
               <h4 className="font-semibold text-xl md:text-3xl text-center">
