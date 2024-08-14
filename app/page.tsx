@@ -11,7 +11,6 @@ import { fetchPageInfo } from "@/utils/fetchPageInfo";
 import { fetchProjects } from "@/utils/fetchProjects";
 import { fetchSkills } from "@/utils/fetchSkills";
 import { fetchSocials } from "@/utils/fetchSocials";
-import Link from "next/link";
 import { ToastContainer } from "react-toastify";
 
 export default async function Home() {
@@ -23,7 +22,7 @@ export default async function Home() {
   const socials: Social[] = await fetchSocials();
 
   return (
-    <main className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+    <main className="bg-[rgb(36,36,36)] text-white h-screen overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
        <ToastContainer
     position="top-center"
     autoClose={2000}
@@ -37,22 +36,22 @@ export default async function Home() {
     theme="light"
     />
       <Header socials={socials}/>
-      <section id="hero" className="snap-start">
+      <section id="hero">
         <Hero pageInfo={pageInfo}/>
       </section>
-      <section id="about" className="snap-center">
+      <section id="about">
         <About pageInfo={pageInfo}/>
       </section>
-      <section id="experience" className="snap-center">
+      <section id="experience">
         <WorkExperience experiences={experience}/>
       </section>
-      <section id="skills" className="snap-start">
+      <section id="skills">
         <Skills skills={skills}/>
       </section>
-      <section id="projects" className="snap-start">
+      <section id="projects">
         <Projects projects={projects}/>
       </section>
-      <section id="contact" className="snap-start">
+      <section id="contact">
         <ContactMe />
       </section>
       {/* <Link href="#hero">

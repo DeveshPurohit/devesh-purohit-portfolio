@@ -20,11 +20,11 @@ export default function Projects({ projects }: Props) {
       <h3 className="absolute top-20 md:top-24 uppercase text-gray-500 tracking-[20px] text-2xl">
         Projects
       </h3>
-      <div className="mt-12 md:mt-4 relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 mb-9 md:mb-24">
+      <div className="mt-12 md:mt-4 relative w-full flex overflow-x-scroll overflow-y-hidden z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 mb-9 md:mb-24">
         {projects.map((project, i) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-5 p-16 md:p-44 h-screen"
+            className="w-screen flex-shrink-0 flex flex-col items-center justify-center space-y-5 px-16 pt-16 pb-2 md:px-44 md:pt-44 md:pb-10"
           >
             <motion.img
               initial={{
