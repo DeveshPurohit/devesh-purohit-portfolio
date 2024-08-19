@@ -1,5 +1,6 @@
 interface SanityBody {
   _createdAt: date;
+  _updatedAt: date;
   _rev: string;
   _type: string;
   _id: string;

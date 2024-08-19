@@ -10,6 +10,8 @@ type Props = {
 };
 
 export default function Projects({ projects }: Props) {
+  //@ts-ignore
+  projects.sort((a,b) => (new Date(b._updatedAt)) - new Date(a._updatedAt))
   return (
     <motion.div
       initial={{ opacity: 0 }}
